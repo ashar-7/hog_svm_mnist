@@ -25,7 +25,9 @@ def deskew(img, imgSize):
 # Load the mnist dataset
 (trainX, trainY), (testX, testY) = mnist.load_data()
 
-# train and test on 5000 samples (remove the below 4 lines to train and test on whole dataset)
+# train and test on 5000 samples
+# (achieves 98% accuracy if trained on whole dataset)
+# (remove the below 4 lines to train and test on whole dataset)
 trainX = trainX[:5000] 
 trainY = trainY[:5000]
 testX = testX[:5000]
